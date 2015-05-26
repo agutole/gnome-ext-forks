@@ -200,7 +200,7 @@ let _indicator;
 
 function enable() {
     _indicator = new DriveMenu;
-    Main.panel.addToStatusArea('drive-menu', _indicator);
+    Main.panel.addToStatusArea('drive-menu', _indicator,1, 'left');
 }
 
 function disable() {
