@@ -1,0 +1,23 @@
+.shellvolumemixer {
+    width: 360px;
+}
+
+.masterslider .slider {
+    width: 267px;
+}
+
+.masterslider .masterlabel {
+    width: 251px;
+}
+
+.masterlabel {
+    width: 251px;
+}
+
+.selected-stream {
+    font-weight: bold;
+}
+
+.floating-label {
+    background-color: rgba(0, 0, 0, 0.9);
+}
