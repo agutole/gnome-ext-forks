@@ -78,11 +78,14 @@ const PlacesMenu = new Lang.Class({
         this.parent(0.0, _("Places"));
 
         let hbox = new St.BoxLayout({ style_class: 'panel-status-menu-box' });
-        let label = new St.Label({ text: _("Places"),
+        /*let label = new St.Label({ text: _("Places"),
                                    y_expand: true,
-                                   y_align: Clutter.ActorAlign.CENTER });
+                                   y_align: Clutter.ActorAlign.CENTER }); */
+        
+        let label = new St.Icon({ icon_name: 'folder-symbolic', style_class: 'system-status-icon' });        
+        
         hbox.add_child(label);
-        hbox.add_child(PopupMenu.arrowIcon(St.Side.BOTTOM));
+        //hbox.add_child(PopupMenu.arrowIcon(St.Side.BOTTOM));
         this.actor.add_actor(hbox);
 
         this.placesManager = new PlaceDisplay.PlacesManager();
